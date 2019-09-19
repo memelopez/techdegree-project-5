@@ -22,19 +22,21 @@ $white    : #fff;
 $black    : #0b0b0b;
 $grey     : #797e83;
 
-$fountain-blue  : #52bab3;
-$emerald        : #5ece7f;
-$sunglo         : #e67478;
-$coral          : #ff784f;
-$purple-majesty : #9279c3;
-$scooter        : #39add1;
+$green-revolution : #58E1C1;
+$aqua             : #51DDFC;
+$grass-gree       : #73BB89;
+$red-pale         : #D57072;
+$orange-flame     : #E97553;
+$purple-flower    : #8E78A8;
 
-// Color Usage
-
-$color-primary   : $fountain-blue;
-$color-secondary : $scooter;
-$color-accent    : $emerald;
-$color-shadow    : rgba($black, .2);
+//Grid colors
+$green-coral      : #9EE0D8;//12
+$blue-dull        : #55AAC7; //6
+$blue-wonderful   : #99E6F6; //4
+$purple-bruise    : #EABCFA; //3
+$green-smooth     : #8FD3A4; //5
+$red-pale         : #E1A6AF; //7
+$orange-feiry     : #E4A88D; //8
 
 // Color Palette Modifiers
 
@@ -42,8 +44,8 @@ $color-palettes: (
 	grey: (
 		xx-light : lighten($grey, 43%),
 		x-light  : lighten($grey, 35%),
-	  light    : lighten($grey, 12%),
-	  base     : $grey,
+	    light    : lighten($grey, 12%),
+	    base     : $grey,
 	 	dark     : darken($grey, 8%),
 	 	x-dark   : darken($grey, 16%)
 	),
