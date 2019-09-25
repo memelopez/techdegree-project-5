@@ -3,13 +3,11 @@
 // ==========================================================================
 
 // Font Stacks
-
 $font-url--google        : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
 $font-family--primary    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Font Weights
-
 $font-weight--thin       : 100;
 $font-weight--light      : 300;
 $font-weight--medium     : 400;
@@ -17,22 +15,20 @@ $font-weight--bold       : 700;
 $font-weight--ultra-bold : 900;
 
 // Descriptive Base Colors
-
 $white    : #fff;
 $black    : #0b0b0b;
 $grey     : #797e83;
 
 // Colors from mock-up 
+$green-revolution  : #58E1C1;
+$aqua              : #51DDFC;
+$grass-green       : #73BB89;
+$red-pale          : #D57072;
+$orange-flame      : #E97553;
+$purple-flower     : #8E78A8;
 
-$green-revolution : #58E1C1;
-$aqua             : #51DDFC;
-$grass-gree       : #73BB89;
-$red-pale         : #D57072;
-$orange-flame     : #E97553;
-$purple-flower    : #8E78A8;
-
-//Grid colors
-$green-coral      : #9EE0D8;//12
+// Grid Colors
+$green-coral      : #9EE0D8; //12
 $blue-dull        : #55AAC7; //6
 $blue-wonderful   : #99E6F6; //4
 $purple-bruise    : #EABCFA; //3
@@ -41,7 +37,6 @@ $red-pale         : #E1A6AF; //7
 $orange-feiry     : #E4A88D; //8
 
 // Color Palette Modifiers
-
 $color-palettes: (
 	grey: (
 		xx-light : lighten($grey, 43%),
@@ -58,44 +53,50 @@ $color-palettes: (
 	)
 );
 
-// UI Colors
-
-$ui-colors: (
-	default : $fountain-blue,
-	success : $emerald,
-	error   : $sunglo,
-	warning : $coral,
-	info    : $purple-majesty
+// UI Colors & Grid Colors Map
+$mockup-colors: (
+	ui-colors: ( 
+		primary : $green-revolution,
+		default : $aqua,
+		success : $grass-green,
+		error   : $red-pale,
+		warning : $orange-flame,
+		info    : $purple-flower,
+	),
+	grid-colors: (
+		grid-12   : $green-coral,
+		grid-6    : $blue-dull,
+		grid-4    : $blue-wonderful,
+		grid-3    : $purple-bruise,
+		grid-5    : $green-smooth,
+		grid-7    : $red-pale,
+		grid-8    : $orange-feiry,
+	
+	)
 );
 
 // Text
-
 $base__font-size : 16px;
 $base__line      : 24px;
 $letter-space    : 1px;
 
 // Border radius
-
 $br--default    : .4em;
 $br--round      : 50%;
 
 // Transitions
-
 $trns-duration  : .3s;
 
 // Path to Assets
-
 $path--rel      : "../img";
 
 // Grid
-
 $g-col-width    : 65px;
 $g-gutter-width : 20px;
 $g-col-count    : 12;
 $g-cont-max-w   : 1050px;
 
-// Breakpoints 
-
+// Breakpoints (los que indica project5)
 $brkpoint-sm    : 1px;
 $brkpoint-md    : 480px;
 $brkpoint-lg    : 1400px;

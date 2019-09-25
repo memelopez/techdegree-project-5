@@ -1,0 +1,52 @@
+// ==========================================================================
+// Extends 
+// ==========================================================================
+
+// Placeholders
+
+%links {
+    color: palette(ui-colors, aqua); 
+	text-decoration: none;
+	font-weight: $font-weight--medium;
+}
+
+%imgs {
+    margin-bottom: em(24px);
+    max-width: 100%;
+    height: auto;
+}
+
+// Headlines 
+
+%hdln-prim {
+    color: mockup-palette(ui-colors, primary);
+    font-weight: $font-weight--bold;
+    font-size: em(42px);
+    line-height: (46px/42px);
+    margin-top: 0;
+}
+
+%hdln-sec {
+    color: palette(grey, light);
+    letter-spacing: $letter-space;
+    font-weight: $font-weight--light;
+    font-size: em(24px);
+    // font-family: $font-family--secondary;
+}
+
+// Nav Items 
+
+%nav-items {
+    font-weight: $font-weight--light;
+    text-align: center;
+    font-size: em(18px);
+    display: block;
+    padding: em(8px, 18px);
+}
+
+// Center alignment
+
+%center-align {
+	text-align: center;
+}
+

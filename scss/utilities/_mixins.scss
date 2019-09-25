@@ -21,6 +21,7 @@
 	}
 }
 
+// flexbox 
 @mixin flx ($direction) {
 	@if $direction == 'row' {
 		display: flex;
@@ -30,5 +31,6 @@
 	@else {
 		display: flex;
 		flex-direction: column;
+		@content;
 	}
 }
