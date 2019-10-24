@@ -2,6 +2,11 @@
   Base Styles
 --------------------------- */
 
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 .container {
 	width: 90%;
 	margin: auto;
