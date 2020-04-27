@@ -37,21 +37,21 @@ $red-pale         : #E1A6AF; //7
 $orange-feiry     : #E4A88D; //8
 
 // Color Palette Modifiers
-$color-palettes: (
-	grey: (
-		xx-light : lighten($grey, 43%),
-		x-light  : lighten($grey, 35%),
-	    light    : lighten($grey, 12%),
-	    base     : $grey,
-	 	dark     : darken($grey, 8%),
-	 	x-dark   : darken($grey, 16%)
-	),
-	black: (
-		light    : lighten($black, 10%),
-		base     : $black,
-		dark     : darken($black, 10%)
-	)
-);
+// $color-palettes: (
+// 	grey: (
+// 		xx-light : lighten($grey, 43%),
+// 		x-light  : lighten($grey, 35%),
+// 	    light    : lighten($grey, 12%),
+// 	    base     : $grey,
+// 	 	dark     : darken($grey, 8%),
+// 	 	x-dark   : darken($grey, 16%)
+// 	),
+// 	black: (
+// 		light    : lighten($black, 10%),
+// 		base     : $black,
+// 		dark     : darken($black, 10%)
+// 	)
+// );
 
 // UI Colors & Grid Colors Map
 $mockup-colors: (
@@ -71,7 +71,19 @@ $mockup-colors: (
 		grid-5    : $green-smooth,
 		grid-7    : $red-pale,
 		grid-8    : $orange-feiry,
-	
+	),
+	grey: (
+		xx-light : lighten($grey, 43%),
+		x-light  : lighten($grey, 35%),
+	    light    : lighten($grey, 12%),
+	    base     : $grey,
+	 	dark     : darken($grey, 8%),
+	 	x-dark   : darken($grey, 16%)
+	),
+	black: (
+		light    : lighten($black, 10%),
+		base     : $black,
+		dark     : darken($black, 10%)
 	)
 );
 
