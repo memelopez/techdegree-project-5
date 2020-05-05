@@ -1,0 +1,32 @@
+// ==========================================================================
+// Navigation
+// ==========================================================================
+
+.nav {
+    margin-top: em(40px);
+    margin-bottom: em(60px);
+
+    @include e(item) {
+
+        a {
+            color: mockup-palette(grey, base);
+            text-decoration: none;
+            // font-weight: $font-weight--light;
+            font-size: em(19px);
+            display: block;
+            padding: em(20px) 0;
+        }
+
+    }
+
+}
+
+[class^="nav__item"] {
+    &:first-of-type {
+        background-color: mockup-palette(ui-colors, primary);
+        border-radius : $br--default;
+        a {
+            color: $white;
+        }
+    }
+}

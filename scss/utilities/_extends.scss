@@ -5,7 +5,7 @@
 // Placeholders
 
 %links {
-    color: palette(ui-colors, aqua); 
+    color: mockup-palette(ui-colors, default); 
 	text-decoration: none;
 	font-weight: $font-weight--medium;
 }
@@ -21,17 +21,18 @@
 %hdln-prim {
     color: mockup-palette(ui-colors, primary);
     font-weight: $font-weight--bold;
-    font-size: em(42px);
-    line-height: (46px/42px);
+    font-size: em(35px);
+    line-height: (40px/35px);
     margin-top: 0;
+    padding-left: em(10px);
 }
 
 %hdln-sec {
-    color: palette(grey, light);
+    color: mockup-palette(grey, light);
     letter-spacing: $letter-space;
     font-weight: $font-weight--light;
     // font-size: em(24px);
-    // font-family: $font-family--secondary;
+    text-align: left;
 }
 
 // Nav Items 
@@ -50,3 +51,44 @@
 	text-align: center;
 }
 
+// Clearfix
+
+%clearfix {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+}
+  
+// Screen reader text
+
+.srt {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+// Buttons
+
+%btn {
+    padding: 15px 30px;
+    border: 0;
+    border-radius : $br--default;
+    color: $white;
+    text-transform: uppercase;
+    font-size : em(14px);
+    font-weight: $font-weight--medium;
+    display: block;
+    &:hover {
+        opacity: .75;
+    }
+    &:active {
+        opacity: initial;
+    }
+}

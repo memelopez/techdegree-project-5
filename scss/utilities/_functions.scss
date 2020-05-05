@@ -2,16 +2,12 @@
 // Functions
 // ==========================================================================
 
-// Import if Google Fonts URL is defined
-@if variable-exists(font-url--google) {
-    @import url($font-url--google);
-}
-
 // Calculate em values
 @function em($target, $context: $base__font-size) {
     @return ($target / $context) * 1em;
 }
 
+// Call the colors
 
 @function mockup-palette($palette, $tone){
     @return map-get(map-get($mockup-colors, $palette), $tone);

@@ -1,0 +1,16 @@
+// ==========================================================================
+// Images
+// ==========================================================================
+
+.img {
+    @include m(logo){
+        @extend %imgs;
+    }
+    @include m(avatar) {
+        display: block;
+        border-radius: $br--round;
+        margin: em(24px) 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

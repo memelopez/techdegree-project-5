@@ -2,6 +2,9 @@
 // Grid
 // ==========================================================================
 
-.grid__row {
-    @include flx (column);
+.grid {
+    @include e(row){
+        @extend %center-align;
+        @include flx(column);
+    }
 }

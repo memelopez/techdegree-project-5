@@ -3,9 +3,7 @@
 // ==========================================================================
 
 // Font Stacks
-$font-url--google        : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
-$font-family--primary    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--primary    : 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Font Weights
 $font-weight--thin       : 100;
@@ -22,7 +20,7 @@ $grey     : #797e83;
 // Colors from mock-up 
 $green-revolution  : #58E1C1;
 $aqua              : #51DDFC;
-$grass-green       : #73BB89;
+$green-grass       : #73BB89;
 $red-pale          : #D57072;
 $orange-flame      : #E97553;
 $purple-flower     : #8E78A8;
@@ -58,7 +56,7 @@ $mockup-colors: (
 	ui-colors: ( 
 		primary : $green-revolution,
 		default : $aqua,
-		success : $grass-green,
+		success : $green-grass,
 		error   : $red-pale,
 		warning : $orange-flame,
 		info    : $purple-flower,
@@ -88,16 +86,13 @@ $mockup-colors: (
 );
 
 // Text
-$base__font-size : 16px;
+$base__font-size : 18px;
 $base__line      : 24px;
 $letter-space    : 1px;
 
 // Border radius
 $br--default    : .4em;
 $br--round      : 50%;
-
-// Transitions
-$trns-duration  : .3s;
 
 // Path to Assets
 $path--rel      : "../img";
