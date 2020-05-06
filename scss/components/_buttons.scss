@@ -1,0 +1,26 @@
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+.btn {
+	@include bg-colors(map-get($mockup-colors, ui-colors));
+}
+
+[class^="btn--"] {
+  @extend %center-align;
+  @extend %btn;
+  margin-bottom: em(20px, 14px); 
+  width: 100%;
+//   @media (min-width: 1px) and (max-width: 768px) {
+//   	width: 100%;
+//   }
+//   @media (min-width: 769px) { 
+//     width: auto;
+//     display: inline-block;
+//     @include doubly(20px);
+//   }
+}
+
+[id="buttons"] {
+    margin-bottom: em(70px);
+}

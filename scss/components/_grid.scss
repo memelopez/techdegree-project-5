@@ -8,3 +8,13 @@
         @include flx(column);
     }
 }
+
+.theme {
+    @include e(colors) {
+        text-align: left;
+    }
+}
+
+.centered {
+    @extend %center-align;
+}
