@@ -5,6 +5,7 @@
 .img {
     @include m(logo){
         @extend %imgs;
+        margin-top: em(30px);
     }
     @include m(avatar) {
         display: block;

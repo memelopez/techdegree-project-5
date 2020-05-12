@@ -14,21 +14,16 @@
 	@include e(input) {
         // font-size : em(18px);
         display: block;
-        margin: em(40px) 0 em(30px);
+		margin: em(40px) 0;
+		padding: 0 em(10px);
         border-style: none;
 		border-bottom: 6px solid mockup-palette(ui-colors, primary);
-		// border-radius: $br--default;
-		// background: palette(grey, xx-light);
+		line-height: em(50px);
 		color: mockup-palette(grey, dark);
 		font-weight: $font-weight--medium;
-        width: 100%;
+		width: 100%;
 		// &:focus {	
 		// 	border-color: $color-primary;
 		// }
 	}
-
-	// @include e(btn) {
-	// 	@extend %btn;
-	// 	background: $color-primary;
-	// }
 }

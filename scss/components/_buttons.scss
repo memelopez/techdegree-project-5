@@ -6,11 +6,11 @@
 	@include bg-colors(map-get($mockup-colors, ui-colors));
 }
 
-[class^="btn--"] {
-  @extend %center-align;
-  @extend %btn;
-  margin-bottom: em(20px, 14px); 
-  width: 100%;
+// [class^="btn--"] {
+//   @extend %center-align;
+//   @extend %btn;
+//   margin-bottom: em(20px, 14px); 
+//   width: 100%;
 //   @media (min-width: 1px) and (max-width: 768px) {
 //   	width: 100%;
 //   }
@@ -19,8 +19,14 @@
 //     display: inline-block;
 //     @include doubly(20px);
 //   }
-}
+// }
 
 [id="buttons"] {
     margin-bottom: em(70px);
+}
+
+.theme {
+  @include e(colors) {
+      @extend %btn;
+  }
 }

@@ -62,3 +62,13 @@
 		}
 	}
 }
+
+// Generate modifier grid__col-- clases
+
+@mixin grid-colors($map) {
+	@each $theme, $color in $map {
+		&--#{$theme} {
+			background-color: $color;    
+		}
+	}
+}

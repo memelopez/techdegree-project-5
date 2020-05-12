@@ -33,6 +33,7 @@
     font-weight: $font-weight--light;
     // font-size: em(24px);
     text-align: left;
+    margin-top: em(80px);
 }
 
 // Nav Items 
@@ -78,6 +79,7 @@
 
 %btn {
     padding: 15px 10px;
+    margin: em(20px) 0;
     border: 0;
     border-radius : $br--default;
     color: $white;
@@ -85,7 +87,15 @@
     // font-size : em(20px);
     font-weight: $font-weight--medium;
     display: block;
+    width: 100%;
     &:hover {
         opacity: .75;
     }
+}
+
+%btn-grid {
+    color: mockup-palette(grey, dark);
+    text-align: left;
+    margin: em(5px);
+    text-transform: lowercase;
 }
