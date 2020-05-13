@@ -29,6 +29,9 @@ ul {
 	font-weight: $font-weight--medium;
 	line-height: ($base__line/$base__font-size);
 	padding: em(40px) 0;
+	@include mq(desktop) {
+		width: 75%;
+	}
 }
 
 .card {

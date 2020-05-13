@@ -15,10 +15,20 @@
             font-size: em(19px);
             display: block;
             padding: em(20px) 0;
+
         }
 
+        @include mq(desktop) {
+            margin: 0 em(10px);
+            padding: 0 em(10px);
+        }
     }
 
+    @include mq(desktop) {
+        @include flx(row){
+            justify-content: space-evenly;
+        }
+    }
 }
 
 [class^="nav__item"] {

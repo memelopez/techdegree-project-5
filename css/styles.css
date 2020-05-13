@@ -43,6 +43,7 @@
   border-radius: 0.4em;
   color: #fff;
   text-transform: uppercase;
+  font-size: 0.7777777778em;
   font-weight: 400;
   display: block;
   width: 100%; }
@@ -438,6 +439,9 @@ ul {
   font-weight: 400;
   line-height: 1.3333333333;
   padding: 2.2222222222em 0; }
+  @media (min-width: 1401px) {
+    .container {
+      width: 75%; } }
 
 .card {
   margin-top: 2.2222222222em;
@@ -460,6 +464,11 @@ ul {
   display: flex;
   flex-direction: column;
   margin: 1.6666666667em 0; }
+  @media (min-width: 1401px) {
+    .grid__row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; } }
 
 [class*="grid__col--12 theme__colors"] {
   background-color: #9EE0D8; }
@@ -534,6 +543,15 @@ ul {
     font-size: 1.0555555556em;
     display: block;
     padding: 1.1111111111em 0; }
+  @media (min-width: 1401px) {
+    .nav__item {
+      margin: 0 0.5555555556em;
+      padding: 0 0.5555555556em; } }
+  @media (min-width: 1401px) {
+    .nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; } }
 
 [class^="nav__item"]:first-of-type {
   background-color: #58E1C1;

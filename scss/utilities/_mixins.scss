@@ -5,18 +5,13 @@
 // Media queries
 
 @mixin mq($break) {
-	@if $break == "small" {
-		@media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+	@if $break == "mobile" {
+		@media (min-width: $brkpoint-sm) and (max-width: $brkpoint-lg) {
 			@content;
 		}
 	}
-	@else if $break == "medium" {
-		@media (min-width: $brkpoint-md + 1) {
-			@content;
-		}
-	}
-	@else if $break == "large" {
-		@media (min-width: $brkpoint-lg) {
+	@else if $break == "desktop" {
+		@media (min-width: $brkpoint-lg + 1) {
 			@content;
 		}
 	}

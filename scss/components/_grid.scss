@@ -7,11 +7,17 @@
         @extend %center-align;
         @include flx(column);
         margin: em(30px) 0;
+
+        @include mq(desktop) {
+            @include flx(row) {
+                justify-content: space-around;
+            }
+        }
     }
 
-    @include e(col){
-        // @include bg-colors(map-get($mockup-colors, grid-colors));
-    }
+    // @include e(col){
+    //     @include bg-colors(map-get($mockup-colors, grid-colors));
+    // }
 }
 
 
