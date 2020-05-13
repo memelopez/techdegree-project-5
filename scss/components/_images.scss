@@ -18,5 +18,8 @@
         border: 1px solid mockup-palette(grey, x-light);
         padding: em(12px);
         margin: em(40px) 0 em(10px);
+        @include mq(desktop) {
+            margin: 0;
+        }
     }
 }

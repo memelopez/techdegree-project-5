@@ -14,12 +14,9 @@
             }
         }
     }
-
-    // @include e(col){
-    //     @include bg-colors(map-get($mockup-colors, grid-colors));
-    // }
 }
 
+// Grid buttons 
 
 [class*="grid__col--12 theme__colors"] {
     @extend %btn-grid;
@@ -55,3 +52,39 @@
     @extend %btn-grid;
     background-color: mockup-palette(grid-colors, 3);
 }
+
+
+// Calculate grid columns
+
+.grid__col{
+    @include mq(desktop) {
+      @include g-columns;
+    }
+  }
+
+  // Column styles
+
+[class^="grid__col--"] {
+    @include mq(mobile) {
+      margin-top: em(12px);
+      margin-bottom: em(12px);
+    }
+    @include mq(desktop) {
+    //   @include doubly(percentage($g-gutter-width / $context));    
+    //   float: left;
+      min-height: 1px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+    //   &:last-of-type {
+    //     float: right;
+    //   }
+    }
+  }
+
+  .centered {
+    @include mq(desktop) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }

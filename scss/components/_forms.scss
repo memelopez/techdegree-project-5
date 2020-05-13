@@ -26,4 +26,11 @@
 		// 	border-color: $color-primary;
 		// }
 	}
+
+	.btn--default{
+		@include mq(desktop) {
+			display: block;
+			width: 100%;
+		}
+	}
 }

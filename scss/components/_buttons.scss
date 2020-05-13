@@ -30,3 +30,43 @@
       @extend %btn;
   }
 }
+
+// Buttons ins desktops 
+[class*="btn--default theme__colors"] {
+  @include mq(desktop) {
+    display: inline-block;
+    width: 15%;
+  }
+}
+[class*="btn--success theme__colors"] {
+  @include mq(desktop) {
+    display: inline-block;
+    width: 15%;
+  }
+}
+[class*="btn--error theme__colors"] {
+  @include mq(desktop) {
+    display: inline-block;
+    width: 15%;
+  }
+}
+[class*="btn--warning theme__colors"] {
+  @include mq(desktop) {
+    display: inline-block;
+    width: 15%;
+  }
+}
+[class*="btn--info theme__colors"] {
+  @include mq(desktop) {
+    display: inline-block;
+    width: 15%;
+  }
+}
+
+.grid__col--12 {
+  @include mq(desktop){
+    @include flx(row) {
+      justify-content: space-evenly;
+    }
+  }
+}
